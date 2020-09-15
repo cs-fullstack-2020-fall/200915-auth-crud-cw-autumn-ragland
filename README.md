@@ -44,12 +44,12 @@ Book Model
 - View
     - Create a partial to display book properties
     - Create a view to display all books using a partial with a button to view details
-    - Create a band details view that displays a bands properties using a partial with a button to update and delete the band
+    - Create a book details view that displays a books properties using a partial with a button to update and delete the book
 - Create and Update
-    - Create a partial to display the form fields required to create and update a band
-    - Create a view that displays a model bound form using a partial submitting to the appropriate endpoint to create a band
-    - Create a view that displays a model bound form using a partial submitting to the appropriate endpoint to update a band
-- Create a view that displays a confirmation to delete a band
+    - Create a partial to display the form fields required to create and update a book
+    - Create a view that displays a model bound form using a partial submitting to the appropriate endpoint to create a book
+    - Create a view that displays a model bound form using a partial submitting to the appropriate endpoint to update a book
+- Create a view that displays a confirmation to delete a book
 - Implement client side validation by adding required script files to `_Layout` file
 
 ### Styling

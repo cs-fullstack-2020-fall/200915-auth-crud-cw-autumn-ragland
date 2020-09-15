@@ -1,6 +1,8 @@
-@model Classwork.Models.BookModel
-<h1>Add A New Book</h1>
+@* display model bound form using partial that sends data to the CreateBook endpoint on submit *@
 
+@model Classwork.Models.BookModel
+
+<h1>Add A New Book</h1>
 @using(@Html.BeginForm("CreateBook", "Book"))
 {
     <partial name = "_form"/>

@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Classwork.Models
 {
+    // book model used in views and dbset with custom validation and validation messages using model annotations
     public class BookModel
     {
         [Key]

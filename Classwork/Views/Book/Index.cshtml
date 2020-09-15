@@ -1,6 +1,8 @@
-@model Classwork.Data.ApplicationDbContext
-<h1>Library Database</h1>
+@* display all books in db by look through context passed as model using partial and include navigation to details *@
 
+@model Classwork.Data.ApplicationDbContext
+
+<h1>Library Database</h1>
 @foreach (BookModel item in @Model.books)
 {
     <partial name = "_book" model = "@item"/>

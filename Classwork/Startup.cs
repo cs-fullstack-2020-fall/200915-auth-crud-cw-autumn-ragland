@@ -33,11 +33,12 @@ namespace Classwork
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-
+            
+            // add razor runtime compilation
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
+            services.AddRazorPages();
 
-           services.AddRazorPages();
-
+            // add authentication policy 
            services.AddMvc(obj => 
            {
                AuthorizationPolicy policy = new AuthorizationPolicyBuilder()

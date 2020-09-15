@@ -13,6 +13,7 @@ namespace Classwork.Data
             : base(options)
         {
         }
+        // add db set of type book model - new table in generated db file
         public DbSet<BookModel> books {get;set;}
     }
 }
