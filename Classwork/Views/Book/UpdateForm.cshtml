@@ -1,0 +1,11 @@
+@model Classwork.Models.BookModel
+<h1>Update A Book</h1>
+
+@using(@Html.BeginForm("UpdateBook", "Book"))
+{
+    <partial name = "_form"/>
+    <div>
+        @Html.HiddenFor(book => book.id)
+    </div>
+    <button type="submit">Submit</button>
+}

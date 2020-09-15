@@ -1,0 +1,24 @@
+@model Classwork.Models.BookModel
+
+<div>
+    @Html.LabelFor(book => book.title)
+    @Html.TextBoxFor(book =>book.title)
+    @Html.ValidationMessageFor(book => book.title)
+</div>
+
+<div>
+    @Html.LabelFor(book => book.author)
+    @Html.TextBoxFor(book =>book.author)
+    @Html.ValidationMessageFor(book => book.author)
+</div>
+
+<div>
+    @Html.LabelFor(book => book.isbn)
+    @Html.TextBoxFor(book =>book.isbn)
+    @Html.ValidationMessageFor(book => book.isbn)
+</div>
+
+<div>
+    @Html.CheckBoxFor(book =>book.isBestSeller)
+    @Html.LabelFor(book => book.isBestSeller)
+</div>

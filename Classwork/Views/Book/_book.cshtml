@@ -1,0 +1,9 @@
+@model Classwork.Models.BookModel
+
+<h1>Title : @Model.title</h1>
+<h3>Author : @Model.author</h3>
+<h3>ISBN : @Model.isbn</h3>
+@if(@Model.isBestSeller)
+{
+    <h3>This book is a New York Times Best Seller</h3>
+}

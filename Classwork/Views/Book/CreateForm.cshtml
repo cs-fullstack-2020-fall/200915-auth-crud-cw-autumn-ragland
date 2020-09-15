@@ -1,0 +1,8 @@
+@model Classwork.Models.BookModel
+<h1>Add A New Book</h1>
+
+@using(@Html.BeginForm("CreateBook", "Book"))
+{
+    <partial name = "_form"/>
+    <button type="submit">Submit</button>
+}

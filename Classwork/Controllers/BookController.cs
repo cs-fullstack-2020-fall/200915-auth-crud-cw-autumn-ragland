@@ -102,9 +102,9 @@ namespace Classwork.Controllers
         } 
         // Display page to delete Book
         [Authorize]
-        public IActionResult DeleteConf(int bandID)
+        public IActionResult DeleteConf(int bookID)
         {            
-            BookModel matchingBook = _context.books.FirstOrDefault(book => book.id == bandID);
+            BookModel matchingBook = _context.books.FirstOrDefault(book => book.id == bookID);
             if(matchingBook != null)
             {
                 return View(matchingBook);
