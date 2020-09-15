@@ -13,7 +13,8 @@ namespace Classwork.Controllers
         public Book(ApplicationDbContext context)
         {
             _context = context;
-        }// View All Bands
+        }
+        // View All Bands
         public IActionResult Index()
         {
             return View(_context);
@@ -22,11 +23,11 @@ namespace Classwork.Controllers
         public IActionResult BookDetails(int bookID)
         {      
             // find book in db by id
-            BookModel matchingBand = _context.books.FirstOrDefault(book => book.id == bookID);
+            BookModel matchingBook = _context.books.FirstOrDefault(book => book.id == bookID);
             // if book is found
-            if(matchingBand != null)
+            if(matchingBook != null)
             {
-                return View(matchingBand);
+                return View(matchingBook);
             } else 
             // if book is not found
             {
@@ -46,7 +47,7 @@ namespace Classwork.Controllers
                 return RedirectToAction("Index");  
             } else 
             {
-                return Content("Invalid Model");
+                return View("CreateForm", newBook);
             }
         } 
         // Update Book in DB
@@ -70,7 +71,7 @@ namespace Classwork.Controllers
                 } else 
                 // render form again populated with invalid data
                 {
-                    return View("UpdateBook", updateBook);
+                    return View("UpdateForm", updateBook);
                 }
             } else 
             {

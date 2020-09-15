@@ -72,3 +72,11 @@ body {
 button {
   margin-bottom: 1%;
 }
+
+.field-validation-error {
+  color : red;
+}
+
+.input-validation-error{
+  border : 1px solid red;
+}

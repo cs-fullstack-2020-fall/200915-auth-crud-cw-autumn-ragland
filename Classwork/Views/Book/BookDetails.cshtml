@@ -4,7 +4,7 @@
 
 <h1>Details for Book @Model.id</h1>
 
-<partial name = "_book"/>
+<partial name = "_book" model = "@Model"/>
 <a asp-action = "UpdateForm" asp-controller = "Book" asp-route-bookID = "@Model.id">
     <button class="btn btn-warning">Edit</button>
 </a>
