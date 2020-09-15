@@ -1,9 +1,16 @@
 @model Classwork.Models.BookModel
+<div>
+    <div class="card border-secondary mb-3" style="max-width: 18rem;">
+        <div class="card-header">
+            <h3>Title : @Model.title</h3> 
+        </div>
+        <div class="card-body text-secondary">
+            <h5 class="card-title">Author : @Model.author</h5>
+            <h5 class="card-title">ISBN : @Model.isbn</h5>
+            @if(@Model.isBestSeller)
+            {
+                <p class="card-text">This book is a New York Times Best Seller</p>
+            }
+        </div>
+</div>
 
-<h1>Title : @Model.title</h1>
-<h3>Author : @Model.author</h3>
-<h3>ISBN : @Model.isbn</h3>
-@if(@Model.isBestSeller)
-{
-    <h3>This book is a New York Times Best Seller</h3>
-}

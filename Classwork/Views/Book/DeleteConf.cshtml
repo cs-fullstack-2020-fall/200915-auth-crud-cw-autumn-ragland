@@ -2,9 +2,9 @@
 <h1>Are you sure you want to delete book @Model.id</h1>
 <partial name = "_book"/>
 <a asp-action = "DeleteBook" asp-controller = "Book" asp-route-bookID = "@Model.id">
-    <button>Delete</button>
+    <button class="btn btn-danger">Delete</button>
 </a>
 <a asp-action = "BookDetails" asp-controller = "Book" asp-route-bookID = "@Model.id">
-    <button>Back to Details</button>
+    <button class="btn btn-primary">Back to Details</button>
 </a>
 

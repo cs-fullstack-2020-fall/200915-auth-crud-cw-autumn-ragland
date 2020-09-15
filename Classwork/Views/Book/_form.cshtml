@@ -1,24 +1,24 @@
 @model Classwork.Models.BookModel
 
-<div>
+<div class = "form-group">
     @Html.LabelFor(book => book.title)
-    @Html.TextBoxFor(book =>book.title)
+    @Html.TextBoxFor(book =>book.title, new { @class = "form-control" } )
     @Html.ValidationMessageFor(book => book.title)
 </div>
 
-<div>
+<div class = "form-group">
     @Html.LabelFor(book => book.author)
-    @Html.TextBoxFor(book =>book.author)
+    @Html.TextBoxFor(book =>book.author, new { @class = "form-control" } )
     @Html.ValidationMessageFor(book => book.author)
 </div>
 
-<div>
+<div class = "form-group">
     @Html.LabelFor(book => book.isbn)
-    @Html.TextBoxFor(book =>book.isbn)
+    @Html.TextBoxFor(book =>book.isbn, new { @class = "form-control" } )
     @Html.ValidationMessageFor(book => book.isbn)
 </div>
 
-<div>
-    @Html.CheckBoxFor(book =>book.isBestSeller)
-    @Html.LabelFor(book => book.isBestSeller)
+<div class = "form-check">
+    @Html.CheckBoxFor(book =>book.isBestSeller, new { @class = "form-check-input" } )
+    @Html.LabelFor(book => book.isBestSeller, new { @class = "form-check-label" } )
 </div>
